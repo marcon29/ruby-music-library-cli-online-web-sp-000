@@ -44,7 +44,8 @@ class Song
   end
 
   def self.find_by_name(name)
-binding.pry
+#binding.pry
+    self.all.detect{ |s| s.name == name }
   end
 
   def self.find_or_create_by_name(name)
