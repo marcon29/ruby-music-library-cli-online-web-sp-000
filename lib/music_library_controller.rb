@@ -30,7 +30,7 @@ class MusicLibraryController
     sorted_lib = library.sort
     sorted_lib.each_with_index { |s, i| puts "#{i+1}. #{s.chomp(s.scan(/ - .+/).last)}"}
 
-    #binding.pry
+    binding.pry
 
   end
 
