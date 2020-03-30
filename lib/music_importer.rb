@@ -4,7 +4,7 @@ class MusicImporter
   # each instance is a directory of music files
   def initialize(path)
     @path = path
-    binding.pry
+    #binding.pry
   end
 
 # puts all files in directory at @path in an array
