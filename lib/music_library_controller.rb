@@ -41,8 +41,8 @@ class MusicLibraryController
     input = gets.strip
     results = Artist.find_by_name(input)
     song_list = results.songs.collect { |s| "#{s.name} - #{s.genre.name}" }
-    song_list.sort.each_with_index { |n, i| puts "#{i+1}. #{n}"}
-binding.pry
+    song_list.sort.each_with_index { |s, i| puts "#{i+1}. #{s}"}
+#binding.pry
   end
 
   def list_songs_by_genre
