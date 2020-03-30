@@ -28,7 +28,7 @@ class Artist
 
   # adds song instances to songs tracker
   def add_song(song)
-    Song.artist = self
+    #Song.artist = self
     @songs << song
   end
 
