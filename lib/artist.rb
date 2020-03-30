@@ -33,9 +33,9 @@ class Artist
       if !@songs.find {|s| s == song}
         @songs << song
       end
-    elsif !song.artist
-      song.artist = self
-    end
+    #elsif !song.artist
+    #  song.artist = self
+    #end
   end
 
 #Song.new("Window", "Neutral Milk Hotel")
