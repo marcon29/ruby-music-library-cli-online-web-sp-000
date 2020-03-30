@@ -50,4 +50,7 @@ class Artist
     #@genre << genre
     #genre.add_song(self)
   end
+
+
+  
 end
