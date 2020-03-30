@@ -13,11 +13,7 @@ class MusicImporter
 
   def self.import
     self.files.each do |filename|
-      artist_name = filename.split(" - ")[0]
-      song_name = filename.split(" - ")[1]
-      genre_name = filename.split(" - ")[2].split(".")[0]
-
-      Song.new_from_filename(artist_name)
+      Song.new_from_filename(filename)
     end
   end
 
