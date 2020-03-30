@@ -11,4 +11,7 @@ class MusicImporter
     Dir.children(path)
   end
 
+  def self.import
+  end
+
 end
