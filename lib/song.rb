@@ -49,7 +49,7 @@ class Song
     self.new(song_name, artist, genre)
 
 
-binding.pry
+#binding.pry
   end
 
 
