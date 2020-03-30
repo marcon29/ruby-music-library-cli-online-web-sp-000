@@ -32,7 +32,7 @@ class Artist
       if !@songs.find {|s| s == song}
         @songs << song
       end
-    elsif !song.arist      
+    elsif !song.arist
       song.artist = self
     end
   end
