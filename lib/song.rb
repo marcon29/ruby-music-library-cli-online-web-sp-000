@@ -6,7 +6,7 @@ class Song
   # creating song adds song_name (string) and artist_instance (via custom setter)
   def initialize(name, artist_name=nil)
     @name = name
-    if artist
+    if artist_name
       self.artist = artist
     end
   end
