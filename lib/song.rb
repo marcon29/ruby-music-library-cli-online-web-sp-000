@@ -55,7 +55,7 @@ class Song
     if !self.find_by_name(genre_name)
       self.new(song_name, artist, genre)
     end
-binding.pry
+#binding.pry
   end
 
 
