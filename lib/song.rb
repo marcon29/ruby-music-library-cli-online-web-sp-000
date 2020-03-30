@@ -48,7 +48,7 @@ class Song
     Artist.new(artist_name)
     Genre.new(genre_name)
   end
-binding.pry
+#binding.pry
 
 
 #  def self.find_by_name(name)
