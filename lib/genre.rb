@@ -26,5 +26,5 @@ class Genre
     new_genre
   end
 
-    
+
 end
