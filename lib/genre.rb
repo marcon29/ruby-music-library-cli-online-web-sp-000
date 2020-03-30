@@ -5,7 +5,7 @@ class Genre
 
   def initialize(name)
     @name = name
-    @songs = []     #array of song instances related to genre instance
+    @songs = []
   end
 
   def self.all
