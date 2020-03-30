@@ -3,6 +3,7 @@ class MusicImporter
 
   # each instance is a directory of music files
   def initialize(path)
+    binding.pry
     @path = path
   end
 
