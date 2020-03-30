@@ -36,7 +36,7 @@ class Artist
       song.artist = self
     end
   end
-binding.pry
+
 #Song.new("Window", "Neutral Milk Hotel")
 #Song.new("Sorry", "SC")
 #Song.new("Hurt", )
