@@ -51,7 +51,7 @@ class Artist
     #self.songs.collect { |s| s.genre }
     #@genre << genre
     #genre.add_song(self)
-  
+
 
 
 
