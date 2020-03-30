@@ -11,6 +11,11 @@ class MusicImporter
     Dir.children(path)
   end
 
+  def self.new_from_filename
+    # creates song intance using info from filename
+    # need to parse filename for song_name, artist_name, genre_name
+  end
+
   def self.import
   end
 
