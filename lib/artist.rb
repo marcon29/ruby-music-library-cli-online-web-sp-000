@@ -28,8 +28,9 @@ class Artist
 
   # adds song instances to songs tracker
   def add_song(song)
-    song.artist = self
-    @songs << song
+    if song.artist = self
+      @songs << song
+    end
   end
 
 #Song.new("Window", "Neutral Milk Hotel").save
