@@ -28,7 +28,6 @@ class Artist
 
   # adds song instances to songs tracker
   def add_song(song)
-    #binding.pry
     if song.artist == self
       if !@songs.find {|s| s == song}
         @songs << song
@@ -38,9 +37,5 @@ class Artist
     end
   end
 
-#Song.new("Window", "Neutral Milk Hotel")
-#Song.new("Sorry", "SC")
-#Song.new("Hurt", )
-#Artist.new("SC")
 
 end
