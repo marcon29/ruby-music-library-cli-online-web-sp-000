@@ -1,4 +1,4 @@
-module Findable
+module Concerns::Findable
   #code
 
 end
