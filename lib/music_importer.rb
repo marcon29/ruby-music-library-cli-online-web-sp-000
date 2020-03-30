@@ -14,6 +14,7 @@ class MusicImporter
   def self.new_from_filename
     # creates song intance using info from filename
     # need to parse filename for song_name, artist_name, genre_name
+    binding.pry
   end
 
   def self.import
