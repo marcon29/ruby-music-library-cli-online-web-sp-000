@@ -10,5 +10,4 @@ module Concerns::Findable
       create(name)
     end
   end
-
 end
