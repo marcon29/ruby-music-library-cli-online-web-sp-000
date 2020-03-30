@@ -1,10 +1,11 @@
 class Genre
-  attr_accessor :name
+  attr_accessor :name, :songs
 
   @@all = []
 
   def initialize(name)
     @name = name
+    @songs = []     #array of song instances related to genre instance
   end
 
   def self.all
