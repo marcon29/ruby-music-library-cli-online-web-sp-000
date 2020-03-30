@@ -42,8 +42,8 @@ class Artist
 binding.pry
     all_genres = []
     self.songs.each do |s|
-      if !all_genres.include?(s.genre.name)
-        all_genres << s.genre.name
+      if !all_genres.include?(s.genre)
+        all_genres << s.genre
       end
     end
     all_genres
