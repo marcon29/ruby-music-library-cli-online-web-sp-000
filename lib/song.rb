@@ -42,4 +42,12 @@ class Song
     new_song.save
     new_song
   end
+
+  def find_by_name
+  end
+
+  def find_or_create_by_name
+  end
+
+  
 end
