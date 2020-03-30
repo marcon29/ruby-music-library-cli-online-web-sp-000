@@ -44,7 +44,10 @@ class Song
     song_name = filename.split(" - ")[1]
     genre_name = filename.split(" - ")[2].split(".")[0]
 
-    self.new(song_name, artist_name, genre_name)
+    artist = Artist.new(artist_name)
+    genre = Genre.new(genre_name)
+
+    self.new(song_name, artist, genre)
   end
 #binding.pry
 
