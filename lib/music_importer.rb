@@ -11,7 +11,7 @@ class MusicImporter
     Dir.children(path)
   end
 
-  def self.import
+  def import
     self.files.each do |filename|
       Song.create_from_filename(filename)
     end
