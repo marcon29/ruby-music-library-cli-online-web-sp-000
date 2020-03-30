@@ -7,8 +7,9 @@ class MusicImporter
     @path = path
   end
 
+# puts all files in directory at @path in an array
   def files
-    # puts all files in directory at @path in an array
+    Dir.children(path) 
   end
 
 end
