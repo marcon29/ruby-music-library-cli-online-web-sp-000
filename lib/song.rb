@@ -17,6 +17,11 @@ class Song
     artist.add_song(self)
   end
 
+  def genre=(genre)
+    @genre = genre
+    genre.songs << self
+  end
+
   def self.all
     @@all
   end
