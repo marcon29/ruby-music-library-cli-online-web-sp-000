@@ -5,7 +5,7 @@ class Artist
 
   def initialize(name)
     @name = name
-    @songs = []     #array of song instances related to artist instance
+    @songs = []
   end
 
   def self.all
@@ -26,7 +26,6 @@ class Artist
     new_artist
   end
 
-  # adds song instances to songs tracker
   def add_song(song)
     if song.artist == self
       if !@songs.find {|s| s == song}
