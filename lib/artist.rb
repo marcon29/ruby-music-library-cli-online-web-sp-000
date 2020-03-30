@@ -40,7 +40,7 @@ class Artist
     # search through song list
     # pull out each genre and add to genre list if not already in it
 binding.pry
-    #@songs.
+    self.songs.collect { |s| s.genre }
     #@genre << genre
     #genre.add_song(self)
   end
