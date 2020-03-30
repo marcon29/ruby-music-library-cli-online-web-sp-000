@@ -37,5 +37,12 @@ class Artist
     end
   end
 
-
+  def genres
+    # search through song list
+    # pull out each genre and add to genre list if not already in it
+    @songs.
+    @genre << genre
+    genre.add_song(self)
+  end
+  
 end
