@@ -27,10 +27,9 @@ class MusicLibraryController
   end
 
   def list_artists
-    #sorted = Artist.all.sort
-    #sorted_lib = library.sort
-    #sorted_lib.each_with_index { |s, i| puts "#{i+1}. #{s.chomp(s.scan(/ - .+/).last)}"}
-binding.pry
+    names = Artist.all.collect { |a| a.name }
+    names.sort.each_with_index { |n, i| puts "#{i+1}. #{n}"}
+#binding.pry
   end
 
   def list_genres
