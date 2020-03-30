@@ -14,7 +14,7 @@ class Song
   # creating song adds song_name (string) and artist_instance (via custom setter)
   def artist=(artist)
     @artist = artist
-    Artist.add_song(self)
+    artist.add_song(self)
   end
 binding.pry
   def self.all
