@@ -35,7 +35,7 @@ class Artist
       end
     #elsif !song.artist
     #  song.artist = self
-    #end
+    end
   end
 
 #Song.new("Window", "Neutral Milk Hotel")
