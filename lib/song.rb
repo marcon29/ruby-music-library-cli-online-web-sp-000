@@ -40,13 +40,11 @@ class Song
   end
 
   def self.new_from_filename(path)
-    MusicImporter.files.each do |filename|
-      artist_name = filename.split(" - ")[0]
-      song_name = filename.split(" - ")[1]
-      genre_name = filename.split(" - ")[2].split(".")[0]
+    artist_name = filename.split(" - ")[0]
+    song_name = filename.split(" - ")[1]
+    genre_name = filename.split(" - ")[2].split(".")[0]
 
-      Song.new(artist_name)
-    end
+    Song.new(artist_name)
   end
 
 
