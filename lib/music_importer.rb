@@ -13,8 +13,13 @@ class MusicImporter
   end
 
   def self.new_from_filename
-    # creates song intance using info from filename
-    # need to parse filename for song_name, artist_name, genre_name
+    self.files.each do |filename| 
+      artist_name = filename.split(" - ")[0]
+      song_name = filename.split(" - ")[1]
+      genre_name = filename.split(" - ")[2].split(".")[0]
+    
+      Song.new(artist_name)
+    end
   end
 
   def self.import
