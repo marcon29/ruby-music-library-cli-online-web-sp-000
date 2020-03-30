@@ -39,9 +39,9 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     input = gets.strip
-    results = Artist.find_by_name(input)
-    song_list = results.songs.collect { |s| "#{s.name} - #{s.genre.name}" }
-    song_list.sort.each_with_index { |s, i| puts "#{i+1}. #{s}"}
+    #results = Artist.find_by_name(input)
+    #song_list = results.songs.collect { |s| "#{s.name} - #{s.genre.name}" }
+    #song_list.sort.each_with_index { |s, i| puts "#{i+1}. #{s}"}
 #binding.pry
   end
 
