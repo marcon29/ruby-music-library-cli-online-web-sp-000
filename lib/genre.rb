@@ -26,5 +26,14 @@ class Genre
     new_genre
   end
 
+  def add_song(song)
+    if song.genre == self
+      if !@songs.find {|s| s == song}
+        @songs << song
+      end
+    elsif !song.genre
+      song.genre = self
+    end
+  end
 
 end
