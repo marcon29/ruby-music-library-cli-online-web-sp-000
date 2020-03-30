@@ -1,0 +1,4 @@
+module Findable
+  #code
+
+end
