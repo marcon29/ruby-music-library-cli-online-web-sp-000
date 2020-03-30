@@ -33,7 +33,7 @@ class Artist
         @songs << song
       end
     else
-      song.artist = self      
+      song.artist = self
     end
   end
 
