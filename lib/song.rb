@@ -35,7 +35,7 @@ class Song
 
   def self.create(name)
     #new_song =
-    self.new(name).save
+    (self.new(name)).save
     #new_song.save
     #new_song
   end
