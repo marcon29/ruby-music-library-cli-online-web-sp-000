@@ -5,7 +5,7 @@ class Artist
 
   def initialize(name)
     @name = name
-    @songs = []
+    @songs = []     #array of song instances related to artist instance
   end
 
   def self.all
@@ -28,7 +28,7 @@ class Artist
 
   # adds song instances to songs tracker
   def add_song(song)
-    @songs << song.artist
+    @songs << song
   end
 
 #Song.new("Window", "Neutral Milk Hotel").save
