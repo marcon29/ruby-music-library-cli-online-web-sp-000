@@ -36,7 +36,10 @@ class Artist
       song.artist = self
     end
   end
+binding.pry
+#Song.new("Window", "Neutral Milk Hotel")
+#Song.new("Sorry", "SC")
+#Song.new("Hurt", )
+#Artist.new("SC")
 
-#Song.new("Window", "Neutral Milk Hotel").save
-#Song.new("Sorry", "SC").save
 end
