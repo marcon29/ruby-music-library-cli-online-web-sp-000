@@ -12,7 +12,7 @@ class Song
   end
 
   # creating song adds song_name (string) and artist_instance (via custom setter)
-  def artist=(artist=nil)
+  def artist=(artist)
     @artist = artist
     Artist.add_song(self)
   end
