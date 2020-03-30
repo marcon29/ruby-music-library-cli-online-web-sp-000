@@ -28,6 +28,7 @@ class Artist
 
   # adds song instances to songs tracker
   def add_song(song)
+    binding.pry
     if song.artist == self
       if !@songs.find {|s| s == song}
         @songs << song
