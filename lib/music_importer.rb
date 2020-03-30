@@ -13,11 +13,11 @@ class MusicImporter
   end
 
   def self.new_from_filename
-    self.files.each do |filename| 
+    self.files.each do |filename|
       artist_name = filename.split(" - ")[0]
       song_name = filename.split(" - ")[1]
       genre_name = filename.split(" - ")[2].split(".")[0]
-    
+
       Song.new(artist_name)
     end
   end
