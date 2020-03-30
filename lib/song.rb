@@ -3,7 +3,6 @@ class Song
 
   @@all = []
 
-  # creating song adds song_name (string) and artist_instance (via custom setter)
   def initialize(name, artist=nil, genre=nil)
     @name = name
 
