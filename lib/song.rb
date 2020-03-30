@@ -3,20 +3,19 @@ class Song
 
   @@all = []
 
+  # creating song adds song_name (string) and artist_instance (via custom setter)
   def initialize(name, artist=nil)
     @name = name
-    @name = artist
+    self.artist = artist
   end
 
-
-#  def artist=(artist=nil)
-#    if artist
-#      @artist = artist
-#      Artist.add_song
-#    end
-#  end
-
-
+  # creating song adds song_name (string) and artist_instance (via custom setter)
+  def artist=(artist=nil)
+    if artist
+      @artist = artist
+      Artist.add_song(self)
+    end
+  end
 
   def self.all
     @@all
