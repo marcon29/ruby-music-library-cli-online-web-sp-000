@@ -27,8 +27,8 @@ class MusicLibraryController
   end
 
   def list_artists
-    sorted_lib = library.sort
-    sorted_lib.each_with_index { |s, i| puts "#{i+1}. #{s.chomp("/ - .+")}"}
+    #sorted_lib = library.sort
+    #sorted_lib.each_with_index { |s, i| puts "#{i+1}. #{s.chomp("/ - .+")}"}
     binding.pry
 
   end
