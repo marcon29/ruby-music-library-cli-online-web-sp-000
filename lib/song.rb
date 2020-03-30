@@ -47,7 +47,7 @@ class Song
     Artist.find_by_name(artist_name)
     Genre.find_by_name(genre_name)
 
-    
+
     artist = Artist.new(artist_name)
     genre = Genre.new(genre_name)
 
