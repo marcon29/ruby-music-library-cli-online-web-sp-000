@@ -39,7 +39,7 @@ class Song
     new_song
   end
 
-  def self.new_from_filename
+  def self.new_from_filename(path)
     MusicImporter.files.each do |filename|
       artist_name = filename.split(" - ")[0]
       song_name = filename.split(" - ")[1]
