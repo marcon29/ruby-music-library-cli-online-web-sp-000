@@ -46,7 +46,7 @@ class Song
 
     self.new(song_name)
     Artist.new(artist_name)
-    Genre.new(genre_name)
+    #Genre.new(genre_name)
   end
 #binding.pry
 
