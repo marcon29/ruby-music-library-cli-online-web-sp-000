@@ -47,6 +47,4 @@ class Genre
   end
 
 
-
-
 end
