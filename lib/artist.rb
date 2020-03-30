@@ -39,7 +39,7 @@ class Artist
   def genres
     # search through song list
     # pull out each genre and add to genre list if not already in it
-binding.pry
+#binding.pry
     all_genres = []
     self.songs.each do |s|
       if !all_genres.include?(s.genre)
