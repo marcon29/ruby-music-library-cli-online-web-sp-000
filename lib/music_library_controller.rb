@@ -1,8 +1,6 @@
 class MusicLibraryController
-  attr_accessor :library
-
   def initialize(path="./db/mp3s")
-    @library = MusicImporter.new(path).import
+    MusicImporter.new(path).import
     #MusicImporter.new(path).import
   end
 
@@ -25,16 +23,6 @@ class MusicLibraryController
   end
 
   def list_songs
-    #first try
-    #sorted_lib = library.sort_by { |s| s.scan(/- .+ -/) }
-    #sorted_lib.each_with_index { |s, i| puts "#{i+1}. #{s.chomp(".mp3")}"}
-
-    #second try
-    #lib = Song.all.collect { |s| "#{s.artist.name} - #{s.name} - #{s.genre.name}" }
-    #sorted_lib = lib.sort_by { |s| s.scan(/- .+ -/) }
-    #sorted_lib.each_with_index { |n, i| puts "#{i+1}. #{n}"}
-
-    # school solution
     Song.all.sort{ |a, b| a.name <=> b.name }.each.with_index(1) do |s, i|
       puts "#{i}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
     end
@@ -74,21 +62,8 @@ class MusicLibraryController
 
     if input.between?(1, Song.all.count)
       song = Song.all.sort{ |a, b| a.name <=> b.name }[input-1]
-#      sorted = results.songs.sort { |a, b| a.name <=> b.name }
-#      sorted.each_with_index { |s, i| puts "#{i+1}. #{s.artist.name} - #{s.name}"}
     end
 
     puts "Playing #{song.name} by #{song.artist.name}" if song
-#binding.pry
   end
-
 end
-
-
-
-
-#      song = list_songs[input-1].name
-#      artist = list_songs[input-1].artist.name
-#      puts "Playing #{song} by #{artist}"
-
-#      puts "Playing #{list_songs[input-1].name} by #{list_songs[input-1].artist.name}"
