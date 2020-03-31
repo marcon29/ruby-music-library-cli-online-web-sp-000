@@ -71,6 +71,7 @@ class MusicLibraryController
       artist = list_songs[input-1].split(" - ")[0]
       puts "Playing #{song} by #{artist}"
 #    end
+binding.pry
   end
 
 end
