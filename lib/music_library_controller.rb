@@ -28,7 +28,7 @@ class MusicLibraryController
   def list_songs
     #sorted_lib = library.sort_by { |s| s.scan(/- .+ -/) }
     #sorted_lib.each_with_index { |s, i| puts "#{i+1}. #{s.chomp(".mp3")}"}
-    
+
     lib = Song.all.collect { |s| "#{s.artist.name} - #{s.name} - #{s.genre.name}" }
     sorted_lib = lib.sort_by { |s| s.scan(/- .+ -/) }
     sorted_lib.each_with_index { |n, i| puts "#{i+1}. #{n}"}
