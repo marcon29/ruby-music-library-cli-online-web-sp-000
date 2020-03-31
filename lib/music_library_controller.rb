@@ -74,9 +74,9 @@ class MusicLibraryController
     input = gets.strip.to_i
 
     if input.between?(1, Song.all.count)
-#    if results = Genre.find_by_name(input)
-      sorted = results.songs.sort { |a, b| a.name <=> b.name }
-      sorted.each_with_index { |s, i| puts "#{i+1}. #{s.artist.name} - #{s.name}"}
+      puts "Playing #{list_songs[input-1].name} by #{list_songs[input-1].artist.name}"
+#      sorted = results.songs.sort { |a, b| a.name <=> b.name }
+#      sorted.each_with_index { |s, i| puts "#{i+1}. #{s.artist.name} - #{s.name}"}
     end
 binding.pry
   end
@@ -86,6 +86,8 @@ end
 
 
 
-#      song = list_songs[input-1].name#.split(" - ")[1]
-#      artist = list_songs[input-1].artist.name#split(" - ")[0]
+#      song = list_songs[input-1].name
+#      artist = list_songs[input-1].artist.name
 #      puts "Playing #{song} by #{artist}"
+
+#      puts "Playing #{list_songs[input-1].name} by #{list_songs[input-1].artist.name}"
