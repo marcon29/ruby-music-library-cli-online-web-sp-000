@@ -61,8 +61,8 @@ class MusicLibraryController
       play_song
     else
       "Playing #{song} by #{artist}"
-    end      
-      
+    end
+
     #binding.pry
 
   end
