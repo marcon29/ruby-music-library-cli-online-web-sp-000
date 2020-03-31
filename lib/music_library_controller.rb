@@ -72,13 +72,11 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list_songs
     input = gets.strip.to_i
-#    if !input.between?(1, library.count)
-#      play_song
-#    else
-    if results = Genre.find_by_name(input)
+
+    if input.between?(1, Song.all.count)
+#    if results = Genre.find_by_name(input)
       sorted = results.songs.sort { |a, b| a.name <=> b.name }
       sorted.each_with_index { |s, i| puts "#{i+1}. #{s.artist.name} - #{s.name}"}
-
     end
 binding.pry
   end
