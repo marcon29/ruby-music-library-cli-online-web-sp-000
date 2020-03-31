@@ -75,11 +75,19 @@ class MusicLibraryController
 #    if !input.between?(1, library.count)
 #      play_song
 #    else
-#      song = list_songs[input-1].name#.split(" - ")[1]
-#      artist = list_songs[input-1].artist.name#split(" - ")[0]
-#      puts "Playing #{song} by #{artist}"
+    if results = Genre.find_by_name(input)
+      sorted = results.songs.sort { |a, b| a.name <=> b.name }
+      sorted.each_with_index { |s, i| puts "#{i+1}. #{s.artist.name} - #{s.name}"}
+
 #    end
-#binding.pry
+binding.pry
   end
 
 end
+
+
+
+
+#      song = list_songs[input-1].name#.split(" - ")[1]
+#      artist = list_songs[input-1].artist.name#split(" - ")[0]
+#      puts "Playing #{song} by #{artist}"
