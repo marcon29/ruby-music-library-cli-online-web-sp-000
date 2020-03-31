@@ -79,7 +79,7 @@ class MusicLibraryController
 #      sorted.each_with_index { |s, i| puts "#{i+1}. #{s.artist.name} - #{s.name}"}
     end
 
-    puts "Playing #{song.name} by #{song.artist.name}"
+    puts "Playing #{song.name} by #{song.artist.name}" if song
 #binding.pry
   end
 
