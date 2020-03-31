@@ -74,10 +74,12 @@ class MusicLibraryController
     input = gets.strip.to_i
 
     if input.between?(1, Song.all.count)
-      puts "Playing #{list_songs[input-1].name} by #{list_songs[input-1].artist.name}"
+      song = Song.all.sort{ |a, b| a.name <=> b.name }[input-1]
 #      sorted = results.songs.sort { |a, b| a.name <=> b.name }
 #      sorted.each_with_index { |s, i| puts "#{i+1}. #{s.artist.name} - #{s.name}"}
     end
+
+    puts "Playing #{song.name} by #{song.artist.name}"
 #binding.pry
   end
 
