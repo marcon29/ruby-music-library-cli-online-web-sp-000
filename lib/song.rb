@@ -20,7 +20,7 @@ class Song
   end
 
   def save
-    @@all << self
+    self.class.all << self
   end
 
   def artist=(artist)
@@ -38,13 +38,13 @@ class Song
   end
 
   def self.new_from_filename(filename)
-#    artist_name = filename.split(" - ")[0]
-#    song_name = filename.split(" - ")[1]
-#    genre_name = filename.split(" - ")[2].split(".")[0]
+    artist_name = filename.split(" - ")[0]
+    song_name = filename.split(" - ")[1]
+    genre_name = filename.split(" - ")[2].split(".")[0]
 
-    artist = Artist.find_or_create_by_name(filename.split(" - ")[0])
-    genre = Genre.find_or_create_by_name(filename.split(" - ")[2].split(".")[0])
-    self.new(filename.split(" - ")[1], artist, genre)
+    artist = Artist.find_or_create_by_name(artist_name)
+    genre = Genre.find_or_create_by_name(genre_name)
+    self.new(song_name, artist, genre)
   end
 
   def self.create_from_filename(filename)

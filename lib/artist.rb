@@ -19,13 +19,11 @@ class Artist
   end
 
   def save
-    @@all << self
+    self.class.all << self
   end
 
   def self.create(name)
-    new_artist = self.new(name)
-    new_artist.save
-    new_artist
+    new_artist = self.new(name).save.last
   end
 
   def add_song(song)
