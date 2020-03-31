@@ -60,7 +60,7 @@ class MusicLibraryController
     if !input.between?(1, library.count)
       play_song
     else
-      "Playing #{song} by #{artist}"
+      #"Playing #{song} by #{artist}"
     end
 
     binding.pry
