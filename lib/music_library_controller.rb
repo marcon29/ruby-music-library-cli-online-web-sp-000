@@ -70,14 +70,15 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
+    list_songs
     input = gets.strip.to_i
-    if !input.between?(1, library.count)
-      play_song
-    else
-      song = list_songs[input-1].name#.split(" - ")[1]
-      artist = list_songs[input-1].artist.name#split(" - ")[0]
-      puts "Playing #{song} by #{artist}"
-    end
+#    if !input.between?(1, library.count)
+#      play_song
+#    else
+#      song = list_songs[input-1].name#.split(" - ")[1]
+#      artist = list_songs[input-1].artist.name#split(" - ")[0]
+#      puts "Playing #{song} by #{artist}"
+#    end
 #binding.pry
   end
 
