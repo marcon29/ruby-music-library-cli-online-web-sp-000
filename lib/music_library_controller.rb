@@ -64,7 +64,7 @@ binding.pry
       #"Playing #{song} by #{artist}"
     end
 
-    
+
 
   end
 
