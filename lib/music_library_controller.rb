@@ -61,11 +61,10 @@ binding.pry
     if !input.between?(1, library.count)
       play_song
     else
-      #"Playing #{song} by #{artist}"
+      song = list_songs[input-1].split(" - ")[0]
+      artist = list_songs[input-1].split(" - ")[1]
+      "Playing #{song} by #{artist}"
     end
-
-
-
   end
 
 end
