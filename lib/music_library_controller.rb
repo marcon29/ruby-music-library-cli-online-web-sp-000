@@ -30,6 +30,7 @@ class MusicLibraryController
     lib = Song.all.collect { |s| "#{s.artist.name} - #{s.name} - #{s.genre.name}" }
     sorted_lib = lib.sort_by { |s| s.scan(/- .+ -/) }
     sorted_lib.each_with_index { |n, i| puts "#{i+1}. #{n}"}
+    sorted_lib
   end
 
   def list_artists
